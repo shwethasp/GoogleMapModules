@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="shwethasp.com.googlemapmodules.activity.DistanceAndTimeActivity">
+
+    <vmokshagroup.com.googlemapmodules.activity.CustomAutoCompleteTextView
+        android:id="@+id/sourcePlace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="@string/str_atv_sourceplaces"
+        android:singleLine="true" />
+
+
+    <shwethasp.com.googlemapmodules.activity.CustomAutoCompleteTextView
+        android:id="@+id/destinationPlace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sourcePlace"
+        android:hint="@string/str_atv_desplaces"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/getDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/destinationPlace"
+        android:text="Get distance" />
+
+    <LinearLayout
+        android:id="@+id/distanceLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getDistance"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/distance_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="distance :" />
+
+        <TextView
+            android:id="@+id/distance_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/timeLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/distanceLinear"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time :" />
+
+        <TextView
+            android:id="@+id/time_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+</RelativeLayout>

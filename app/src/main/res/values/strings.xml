@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GoogleMapModules</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="str_atv_sourceplaces">Source</string>
+    <string name="str_atv_desplaces">Destination</string>
+
+</resources>
